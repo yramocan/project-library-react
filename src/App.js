@@ -1,5 +1,5 @@
-import BookForm from "./BookForm";
-import Library from "./Library";
+import BookForm from "./components/BookForm";
+import Library from "./components/Library";
 import { useEffect, useState } from "react";
 import { v4 as uuid } from "uuid";
 
