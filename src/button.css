@@ -1,0 +1,30 @@
+button {
+  border-width: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 8px;
+}
+
+.button-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-primary {
+  background-color: rgb(0, 102, 255);
+  color: white;
+}
+
+.button-error {
+  background-color: orangered;
+  color: white;
+}
+
+.button-secondary {
+  background-color: none;
+}
+
+.button-success {
+  background-color: forestgreen;
+  color: white;
+}

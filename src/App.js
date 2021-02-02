@@ -51,7 +51,7 @@ export default function App() {
   }
 
   return (
-    <>
+    <div className="app-container">
       <header className="header-container">
         <h1 className="library-title">Yuri's Library</h1>
         <button className={showingBookForm ? "button-error" : "button-success"} onClick={toggleBookForm}>
@@ -66,6 +66,6 @@ export default function App() {
         onRemoveBook={removeBook}
         onToggleReadStatus={toggleReadStatus}
       />
-    </>
+    </div>
   );
 }
