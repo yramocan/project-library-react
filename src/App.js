@@ -10,11 +10,13 @@ export default function App() {
   const [showingBookForm, setShowingBookForm] = useState(false);
 
   useEffect(() => {
+    // Retrieve from local storage
     const storedBooks = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
     if (storedBooks) setBooks(storedBooks);
   }, []);
 
   useEffect(() => {
+    // Save to local storage
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(books));
   }, [books]);
 
